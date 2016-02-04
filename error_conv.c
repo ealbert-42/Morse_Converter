@@ -18,7 +18,7 @@ char	*to_binary(char *str)
 	{
 		if (str[i] == '.')
 			str[i] = '0';
-		else
+		else if (str[i] == '_')
 			str[i] = '1';
 		i++;
 	}
