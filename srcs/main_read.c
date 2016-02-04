@@ -6,8 +6,35 @@
 void	read_morse(char	*str, char **a, char **m)
 {
 	char	**tab;
+	int		i;
+	int		j;
+	int		k;
 
+	i = 0;
+	k = 0;
 	tab = ft_strsplit(str, '/');
+	while (tab[i])
+	{
+		j = 0;
+		while (m[k] && j != 1)
+		{
+			if (tab[i][0] == ' ')
+			{
+					printf(" ");
+					j = 1;
+			}
+			else if (ft_strcmp(tab[i], m[k]) == 0)
+			{
+				printf("%s", a[k]);
+				k = 0;
+				j = 1;
+			}
+			else
+				k++;
+		}
+		i++;
+	}
+	printf("\n");
 }
 
 /* On doit read une phrase */
