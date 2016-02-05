@@ -5,14 +5,12 @@ How to use it :
 
 In terminal only.
 
-./morse "[YOUR_PHRASE]"
+./morse "A Valid SentEnCe"
 
 It will give you the associated morse code.
 
-./morse"[YOUR_MORSE_CODE]"
+./morse".../___/.../ /__/._/_.__/_../._/_.__"
 
 It will give you the associated sentence.
-
-P.S. : The sentence converter only know the alphabet, the decimal numbers and spaces. The morse knows spaces as '/'. The morse code does not know anything more than '.' and '_' (underscore).
 
 Have fun !
