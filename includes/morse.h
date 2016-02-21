@@ -1,6 +1,7 @@
 #ifndef MORSE_H
 # define MORSE_H
 # include <stdlib.h>
+# include <stddef.h>
 # include <stdio.h>
 
 int		ft_strcmp(const char *s1, const char *s2);
